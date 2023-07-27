@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-100" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curiosidade física</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <body>
+    <!---NAVBAR DESCOMPLICADA------------------------------------------------------------------------------------------------------------------>
+    <nav
+      class="navbar navbar-expand-lg col-12 m-auto position-fixed navbar-dark bg-dark"
+      style="z-index: 999" 
+    >
+      <div class="container-fluid col-12 m-auto" >
+        <a class="navbar-brand" href="#" style="font-family: Didot; size: 20px; color: #E5BA48;">Oppenheimer</a>
+        <a class="navbar-brand" href="#contato" style="font-family: Didot; size: 20px; color: #C7C8C9" >Contato</a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="'b'utton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Mais
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#card1"
+                    >História</a>
+                <li><hr class="dropdown-divider" /></li>
+                </li>
+                <li><a class="dropdown-item" href="#card2">Projeto Manhatam</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#card3">Fim da guerra</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#curio_fisic">Curiosidade</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!------------------------------------------------Icon para meu site------------------------------------------------------->
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-radioactive" viewBox="0 0 16 16" style="color: #E5BA48; margin: flex;">
+          <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1ZM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Z"/>
+          <path d="M9.653 5.496A2.986 2.986 0 0 0 8 5c-.61 0-1.179.183-1.653.496L4.694 2.992A5.972 5.972 0 0 1 8 2c1.222 0 2.358.365 3.306.992L9.653 5.496Zm1.342 2.324a2.986 2.986 0 0 1-.884 2.312 3.01 3.01 0 0 1-.769.552l1.342 2.683c.57-.286 1.09-.66 1.538-1.103a5.986 5.986 0 0 0 1.767-4.624l-2.994.18Zm-5.679 5.548 1.342-2.684A3 3 0 0 1 5.005 7.82l-2.994-.18a6 6 0 0 0 3.306 5.728ZM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
+        </svg>
+      </div>
+    </nav>
+    <button id="toggle-theme">Alterar Tema</button>
+    <br />
+    <br />
+    <br />
+      <!---CARROSEL SE IMAGENS DESCOMPLICADA--------------------------------------------------------------------------------------------->
+      <div id="carouselExampleIndicators" class="carousel slide" data-aos="fade-up" data-aos-duration="3000" >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="oppenheimer_resized.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="/oppenheimer2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="/oppenheimer1.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br />
+      <br>
+      <br>
+      <br>
+<!---------------------------------CARD 1----------------------------------------------------------------------------------------------------->
+      <div id="card1" class="card-img">
+      <div class="row justify-content-center" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="col-md-8 text-center">
+          <br>
+          <h2 text="text-center">
+            Início da sua trajetória
+          </h2>
+          <br>
+          <br>
+
+          <div id="linha_do_tempo">
+          <div class="card mb-3" data-aos="zoom-in" data-aos-duration="3000" style="width: auto; height:auto;">
+            <img src="https://veja.abril.com.br/wp-content/uploads/2016/05/oppenheimer-20130725-original1.jpeg?quality=90&strip=info&w=696&h=392&crop=1" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">Oppenheimer desenvolveu interesse pela matemática e ciências naturais desde jovem. Ele frequentou a Escola Ethical Culture, uma escola progressista em Nova Iorque, onde teve acesso a uma educação ampla e rigorosa. Seu talento e dedicação foram notados pelos professores, e ele se destacou em vários campos acadêmicos.
+              Em 1922, Oppenheimer ingressou na Universidade de Harvard, onde inicialmente estudou química e continuou a se destacar academicamente. No entanto, seu interesse foi gradualmente desviado para a física teórica, e ele mudou seu foco para esse campo. Sob a orientação do físico Percy Bridgman, Oppenheimer realizou pesquisas em espectroscopia e fenômenos quânticos.Após concluir seu bacharelado em 1925, Oppenheimer viajou para a Europa para continuar seus estudos em física. Ele passou um período na Universidade de Cambridge, onde trabalhou com o famoso físico experimental Ernest Rutherford. Em seguida, mudou-se para a Universidade de Göttingen, na Alemanha, um importante centro de física teórica na época, onde estudou com nomes como Max Born e Werner Heisenberg.
+              Em 1927, Oppenheimer concluiu seu doutorado na Universidade de Göttingen, sob a supervisão de Max Born. Sua tese tratava de temas relacionados à mecânica quântica, um campo emergente na época que estava revolucionando a física.</p>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+
+
+<!---------------------------------CARD 2----------------------------------------------------------------------------------------------------->
+
+<div id="card2" class="card-img">
+  <div id="aprof_fisica" class="row justify-content-center" data-aos="zoom-in" data-aos-duration="2000">
+    <div class="col-md-8 text-center">
+      <br>
+      <br>
+      <h2 text="text-center">
+        Projeto Manhatam
+      </h2> 
+      <br>
+      <br>
+
+      <div id="linha_do_tempo">
+      <div class="card mb-3" data-aos="zoom-in" data-aos-duration="3000" style="width: auto; height:auto;">
+        <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/0a74/live/25ab26a0-2247-11ee-941e-23d1e9ab75fa.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text" style="text-align: justify;">O Projeto Manhattan começou em 1939, quando os cientistas Albert Einstein e Leo Szilard alertaram o presidente dos Estados Unidos, Franklin D. Roosevelt, sobre a possibilidade de a Alemanha nazista estar trabalhando no desenvolvimento de armas nucleares. Preocupados com a possibilidade de a Alemanha criar uma arma devastadora, os Estados Unidos iniciaram um programa secreto para pesquisar e desenvolver sua própria bomba atômica. O projeto foi oficialmente autorizado em 1942 e foi liderado pelo Corpo de Engenheiros do Exército dos Estados Unidos. O laboratório principal foi estabelecido em Los Alamos, Novo México, sob a direção do físico teórico J. Robert Oppenheimer. Oppenheimer era um cientista proeminente e carismático, conhecido por sua mente brilhante e liderança inspiradora. Ele foi escolhido para liderar o laboratório devido à sua vasta experiência em física e sua capacidade de reunir e liderar uma equipe talentosa de cientistas..</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<!-----------------------------CARD3--------------------------------------------------------------------------------------------------------->
+
+<div id="card3" class="card-img">
+  <div id="aprof_fisica" class="row justify-content-center" data-aos="zoom-in" data-aos-duration="2000">
+    <div class="col-md-8 text-center">
+      <br>
+      <br>
+      <h2 text="text-center">
+        Fim da guerra
+      </h2> 
+      <br>
+      <br>
+
+      <div id="linha_do_tempo">
+      <div class="card mb-3" data-aos="zoom-in" data-aos-duration="3000" style="width: auto; height:auto;">
+        <img src="https://classic.exame.com/wp-content/uploads/2023/07/oppenheimer.jpg?quality=70&strip=info&w=1024" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text" style="text-align: justify;"> 
+            Após o sucesso do Projeto Manhattan e o uso das bombas atômicas em Hiroshima e Nagasaki, Oppenheimer foi amplamente reconhecido e elogiado por sua liderança no projeto. Ele recebeu várias honrarias e prêmios por suas contribuições para a ciência e a guerra.
+            Em 1947, Oppenheimer foi nomeado presidente do Comitê Consultivo de Energia Atômica (ACEA) dos Estados Unidos, um órgão importante responsável por aconselhar o governo sobre questões relacionadas à energia atômica e ao desenvolvimento de armas nucleares.
+            No final da década de 1940 e início da década de 1950, surgiram preocupações sobre a segurança nacional dos Estados Unidos relacionadas à espionagem e à possível disseminação de informações nucleares. Oppenheimer estava entre os cientistas e funcionários do governo que foram investigados pelo FBI e pelo Comitê de Atividades Antiamericanas da Câmara dos Representantes dos EUA. Embora não tenha sido encontrado culpado de qualquer crime, surgiram questões sobre suas simpatias políticas passadas e seu envolvimento com membros do Partido Comunista.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+
+<!-----------------------------CARD4--------------------------------------------------------------------------------------------------------->
+<div class="container">
+<div class="text-center" id="curio_fisic">
+  <br>
+  <br>
+  <br>
+  <h2 text="text-center">
+    Curiosidade sobre física nuclear
+  </h2>
+  <br>
+  <br>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center" data-aos="fade-right" data-aos-duration="3000">
+    <div class="col-lg-6 col-md-8 col-sm-10">
+      <!-- Card centralizado com imagem e parágrafo -->
+      <div class="card mx-auto">
+        <img src="https://s1.static.brasilescola.uol.com.br/img/2018/10/fissao-nuclear.jpg" class="card-img-top img-fluid" alt="Imagem do Card">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">A física nuclear</h5>
+          <p class="card-text" style="text-align: justify;">A física nuclear é um ramo da física que estuda as propriedades e interações dos núcleos atômicos, que são as partes centrais dos átomos. Ela abrange uma ampla gama de fenômenos, desde a estrutura e a estabilidade dos núcleos até as reações nucleares que liberam ou absorvem energia.
+           Os núcleos atômicos são compostos por prótons e nêutrons, conhecidos como nucleons. Prótons são partículas com carga elétrica positiva, enquanto os nêutrons não possuem carga elétrica (são eletricamente neutros). A estrutura nuclear é descrita pelo Modelo de Shell Nuclear, semelhante ao Modelo de Shell Eletrônico para os elétrons ao redor do núcleo. O modelo de shell descreve os nucleons organizados em camadas energéticas, que determinam a estabilidade do núcleo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+
+<!-----------------------------CARD5--------------------------------------------------------------------------------------------------------->
+<div class="container">
+  <div class="row justify-content-center" data-aos="fade-left" data-aos-duration="3000">
+    <div class="col-lg-6 col-md-8 col-sm-10">
+      <!-- Card centralizado com imagem e parágrafo -->
+      <div class="card mx-auto">
+        <img src="https://www.petroleoenergia.com.br/wp-content/uploads/2022/11/atom.jpg" class="card-img-top img-fluid" alt="Imagem do Card">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Energia</h5>
+          <p class="card-text" style="text-align: justify;"> 
+            A energia de ligação nuclear é a energia necessária para separar todos os nucleons de um núcleo atômico e é uma medida da estabilidade do núcleo. Ela é calculada pela fórmula:
+            
+            Energia de Ligação (BE) = [Z * m_p + (A - Z) * m_n - m_núcleo] * c^2
+            
+            Onde:
+            
+            Z é o número de prótons no núcleo (número atômico).
+            A é o número total de nucleons no núcleo (número de massa).
+            m_p é a massa de um próton.
+            m_n é a massa de um nêutron.
+            m_núcleo é a massa do núcleo.
+            c é a velocidade da luz no vácuo (aproximadamente 3x10^8 m/s).
+            c^2 é o quadrado da velocidade da luz.
+            Reações Nucleares:
+            As reações nucleares envolvem a transformação de núcleos atômicos, geralmente por colisões com partículas ou outras reações nucleares. Essas reações podem liberar ou absorver energia. A equação fundamental para a conservação de energia em reações nucleares é a seguinte:
+            Energia Cinética Inicial + Energia Potencial Inicial = Energia Cinética Final + Energia Potencial Final + Energia Liberada (ou absorvida)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+  <br>
+  <br>
+  <br>
+<!-----------------------------------------CONTATO---------------------------------------------------------------------------------------->
+<br>
+<div class="container">
+<h2 style="text-align: center;">
+  Meu contato
+</h2>
+<br>
+<br>
+</div>
+<div id="contato" class="container d-flex justify-content-center" data-aos="fade-up-left" data-aos-duration="3000">
+  
+  <div class="card mb-3 w-75" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="/photo1690487908.jpeg" class="img-fluid rounded-start w-100" alt="...">
+      </div>
+      <div class="col-md-8" >
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Sobre mim</h5>
+          <p class="card-text" style="font-size: 14px; text-align: justify;">Me chamo Matheus Gabriel, sou entusiasta e apixonado por programação e tecnologia, esse daqui é um portifólio criado em dois dias para uma vaga de estágio no Líber (Laboratório de Tecnologia da UFPE). Meu primeiro portifólio usando javascript, booststrap, html e css, sem contar que eu levantei o site em dois dias e com 30 horas (contadas) de trabalho. Ainda não está perfeito, mas a parte mais "trabalhosa" já foi feita, espero que gostem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---Scripts-->   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      $(document).on('hidden.bs.modal', function(event){ 
+        if($('.modal:visible').length){
+          $('body').addClass('modal.open');
+        }
+      })    
+    </script>
+    <script src="script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
